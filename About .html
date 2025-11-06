@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovenga bakery|About Us</title>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Learn more about Sovenga Bakery – our story, mission, and commitment to quality." />
+  <title>Sovenga Bakery | About</title>
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-    <header>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
         <h1>Sovenga Bakery</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="About .html">About Us</a>
-        <a href="menu.html">Menu</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section class="About us">
-        <h2>Our Story</h2>
-        <p>Founded in 2010,Sovenga Bakery is a Family-owned business dedicated to bringing joy through freshly baked goods.Our founder,No,started Baking in his home kitchen,sharing her creations with neighbors and friends.What began as small passion project has grown into a beloved local bakery,known its warm atmosphere and delicious treats.</p>
-        <h2>Our Mission</h2>
-        <p>At Sovenga Bakery,we belive in using only the finest Ingredients to craft artisanal breads,Pastries,and cakes.Our Mission is to create moments of happiness with every bite,While fostering a sense of community in our town.Whether it's a morning croissant or custom wedding cake,we pour love into everything we bake.</p>
-        <h2>Why Choose Us?</h2>
-        <p>We source local Ingredients whenever possible,Supporting nearby farmers and producers.Our team is passionate about baking from scratch,ensuring every item is made with care.Visit us to experience the warmth of our bakery and the taste of tradition.</p>
+        <div id="current-date" class="date"></div>
+      </div>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" class="nav-toggle">☰ Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about">
+      <h2>Our Story</h2>
+      <p>Founded in 2010, Sovenga Bakery is a family-owned business dedicated to bringing joy through freshly baked goods.</p>
+
+      <h3>Our Mission</h3>
+      <p>We believe in using only the finest ingredients to craft artisanal breads, pastries, and cakes.</p>
+
+      <h3>Why Choose Us?</h3>
+      <p>We source local ingredients whenever possible, supporting nearby farmers and producers.</p>
     </section>
-    <footer>
-        <p>&copy; 2025 Sovenga Bakery. All rights reserved.</p>
-    </footer>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Sovenga Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
