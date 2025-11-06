@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovenga Bakery|Contact</title>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact Sovenga Bakery — place custom orders or visit us in Mankweng." />
+  <title>Sovenga Bakery | Contact</title>
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-    <header>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
         <h1>Sovenga Bakery</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="About .html">About Us</a>
-        <a href="menu.html">Menu</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out for custom orders</p>
+        <div id="current-date" class="date"></div>
+      </div>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" class="nav-toggle">☰ Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <form action="#" method="post">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+  <main>
+    <section class="section">
+      <h2>Contact Us</h2>
+      <p>Reach out for custom orders or inquiries — we’d love to hear from you!</p>
 
-            <div>
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" required>
-            </div>
-
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <div class="contact-info">
-            <p><strong>Address:</strong> 43 University Rd, Mankweng-A</p>
-            <p><strong>Email:</strong> Sovengabakery@gmail.com</p>
-            <p><strong>Phone:</strong> (015)-991-3467</p>
-            <p><strong>Hours:</strong> Mon-Sat: 7AM-6PM, Sun: 8AM-2PM</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8019.252057886572!2d29.718698110312882!3d-23.889765739692358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6c9a284b3b609%3A0x82ee481b56f0035!2sMankweng%20Zone%201%20Community%20Park!5e0!3m2!1sen!2sza!4v1758008202550!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
         </div>
-    </section>
+        <div>
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
 
-    <footer>
-        <p>&copy; 2025 Sovenga Bakery. All rights reserved.</p>
-    </footer>
+      <div class="contact-info">
+        <p><strong>Address:</strong> 43 University Rd, Mankweng-A</p>
+        <p><strong>Email:</strong> Sovengabakery@gmail.com</p>
+        <p><strong>Phone:</strong> (015)-991-3467</p>
+        <p><strong>Hours:</strong> Mon–Sat: 7AM–6PM | Sun: 8AM–2PM</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Sovenga Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
