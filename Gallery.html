@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovenga Bakery|Gallery</title>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="View our delicious bakery creations — breads, pastries, and cakes from Sovenga Bakery." />
+  <title>Sovenga Bakery | Gallery</title>
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="About .html">About Us</a>
-        <a href="menu.html">Menu</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div>
-    <h4>Banana bread</h4>
-    <img src="banana.jfif" alt="banaana">
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <h1>Sovenga Bakery</h1>
+        <div id="current-date" class="date"></div>
+      </div>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" class="nav-toggle">☰ Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div>
-        <h4>White bread</h4>
-        <img src="white-bread-.webp" alt="white-bread">
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="banana.jfif" alt="Banana bread" class="gallery-img" />
+        <img src="white-bread-.webp" alt="White bread" class="gallery-img" />
+        <img src="chocolate muffins.jfif" alt="Chocolate muffins" class="gallery-img" />
+        <img src="vanila.jfif" alt="Vanilla muffins" class="gallery-img" />
+        <img src="custom cake.jpg" alt="Custom cake" class="gallery-img" />
+        <img src="sweet pastries.jfif" alt="Sweet pastries" class="gallery-img" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Sovenga Bakery. All rights reserved.</p>
     </div>
-    <div>
-        <h4>Pastries</h4>
-        <img src="chocolate muffins.jfif" alt="chocolate">
-    </div>
-    <div>
-        <h4>Vanilla Muffins</h4>
-        <img src="vanila.jfif" alt="vanila">
-    </div>
-    <footer>
-        <p>&copy; 2025 Sovenga Bakery. All rights reserved.</p>
-    </footer>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
